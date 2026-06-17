@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FArk Studio — Physio Metric</title>
     <meta name="description"
-        content="Physio Metric: Cebindeki Fizyoterapist. AI destekli postür analizi, fizyoterapist onaylı egzersiz reçetesi ve somut ilerleme kanıtı.">
+        content="Physio Metric: Cebindeki Fizyoterapist. AI destekli postür analizi, kişiselleştirilmiş egzersiz planı ve somut ilerleme kanıtı.">
     <meta property="og:title" content="FArk Studio — Physio Metric">
     <meta property="og:description"
-        content="Ölç. Düzelt. Kanıtla. — AI destekli postür analizi ve kişiselleştirilmiş egzersiz reçetesi.">
+        content="Ölç. Düzelt. Kanıtla. — AI destekli postür analizi ve kişiselleştirilmiş egzersiz planı.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://f-ark.github.io/">
     <meta name="twitter:card" content="summary_large_image">
@@ -814,7 +814,7 @@
 
         .features-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(4, 1fr);
             gap: 20px;
         }
 
@@ -849,6 +849,10 @@
 
         .feature-card:nth-child(3)::before {
             background: linear-gradient(135deg, #818cf8, #a78bfa);
+        }
+
+        .feature-card:nth-child(4)::before {
+            background: linear-gradient(135deg, #fbbf24, #f59e0b);
         }
 
         .feature-card:hover {
@@ -1219,7 +1223,10 @@
                 <div style="display:flex; gap:8px; font-size:13px; font-weight:600; color:var(--text-muted);">
                     <a href="#" style="color:var(--text); text-decoration:none;">TR</a>
                     <span>|</span>
-                    <a href="en/index.html" style="color:var(--text-muted); text-decoration:none; transition:color 0.3s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text-muted)'">EN</a>
+                    <a href="en/index.html"
+                        style="color:var(--text-muted); text-decoration:none; transition:color 0.3s;"
+                        onmouseover="this.style.color='var(--accent)'"
+                        onmouseout="this.style.color='var(--text-muted)'">EN</a>
                 </div>
             </div>
         </div>
@@ -1243,7 +1250,7 @@
                 </h1>
 
                 <p class="hero-subtitle">
-                    AI destekli postür analizi, fizyoterapist onaylı egzersiz reçetesi ve somut ilerleme kanıtı — tek
+                    AI destekli postür analizi, kişiselleştirilmiş egzersiz planı ve somut ilerleme kanıtı — tek
                     uygulamada.
                 </p>
 
@@ -1320,7 +1327,7 @@
                             <path d="M0 28 L80 20 L160 24 L240 18 L240 36 L0 36 Z"
                                 class="sparkline-area sparkarea--orange" />
                         </svg>
-                        <!-- Tanı -->
+                        <!-- Postür Sonucu -->
                         <div class="card-diagnosis">
                             <span class="diag-severity sev--orta">ORTA</span>
                             <span class="diag-name">İleri Baş Duruşu</span>
@@ -1389,7 +1396,7 @@
                             <path d="M0 30 L40 26 L80 22 L120 20 L160 14 L200 10 L240 6 L240 36 L0 36 Z"
                                 class="sparkline-area sparkarea--green" />
                         </svg>
-                        <!-- Tanı -->
+                        <!-- Postür Sonucu -->
                         <div class="card-diagnosis">
                             <span class="diag-severity sev--iyilesti">İYİLEŞTİ</span>
                             <span class="diag-name">✅ İleri Baş Duruşu düzeldi</span>
@@ -1414,7 +1421,7 @@
             <div class="stats-grid">
                 <div class="stat-card">
                     <div class="stat-value">22</div>
-                    <div class="stat-label">Tanı Stratejisi</div>
+                    <div class="stat-label">Değerlendirme Kuralı</div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-value">37+</div>
@@ -1438,32 +1445,32 @@
             <div class="section-label fade-in">Neden Physio Metric?</div>
             <h2 class="section-title fade-in">Profesyonel analiz,<br>cebinizde.</h2>
             <p class="section-subtitle fade-in">
-                AI hallüsinasyonu olmayan, fizyoterapist onaylı deterministik tanı motoru ile klinik doğruluk.
+                Fizyoterapist destekli yapay zeka ile tutarlı ve güvenilir sonuçlar.
             </p>
 
             <div class="features-grid">
                 <div class="feature-card fade-in">
                     <div class="feature-icon feature-icon--clinical">🔬</div>
-                    <h3>Deterministik Tanı Motoru</h3>
-                    <p>AI hallüsinasyonu içermeyen, fizyoterapist onaylı 22 farklı tanı stratejisi. Şiddete göre
-                        progresif egzersiz atama ve kombo tanılar (X Bacak + Dışa Basış = Düz Taban Riski).</p>
-                    <span class="feature-tag tag--deterministic">%100 Deterministik</span>
+                    <h3>Tutarlı Postür Değerlendirmesi</h3>
+                    <p>Kameranızla yaptığınız çekimlerde vücudunuzdaki 33 farklı noktayı analiz ederek 22 farklı duruş alışkanlığını inceler. Farklı bulguları birleştirerek kapsamlı ve güvenilir sonuçlar sunar.</p>
                 </div>
 
                 <div class="feature-card fade-in">
-                    <div class="feature-icon feature-icon--qr">📲</div>
-                    <h3>QR Dijital Reçete Köprüsü</h3>
-                    <p>Fizyoterapistiniz size özel egzersiz planını QR kodla gönderir. Tek taramayla kişiselleştirilmiş
-                        planınıza erişin. Sürtünmesiz, güvenli hasta-uzman bağlantısı.</p>
-                    <span class="feature-tag tag--b2b2c">B2B2C Model</span>
+                    <div class="feature-icon feature-icon--qr" style="background: rgba(255, 109, 0, 0.1); color: #FF6D00;">📍</div>
+                    <h3>Etkileşimli Ağrı Haritası</h3>
+                    <p>Vücudunuzda hissettiğiniz ağrıları ve şiddetini görsel bir harita üzerinde işaretleyebilirsiniz. Uygulama, postür analizinizle ağrı durumunuzu harmanlayarak size en uygun egzersizleri seçer.</p>
+                </div>
+
+                <div class="feature-card fade-in">
+                    <div class="feature-icon feature-icon--qr" style="background: rgba(0, 230, 118, 0.1); color: #00E676;">⏳</div>
+                    <h3>3 Günlük Egzersiz Döngüsü</h3>
+                    <p>Egzersiz alışkanlığı kazanmanız için programınız 3 günlük döngüler halinde sunulur. O gün yapamadığınız egzersizler kaybolmaz, devreder. Döngü bitiminde yeni analizle gelişiminizi görürsünüz.</p>
                 </div>
 
                 <div class="feature-card fade-in">
                     <div class="feature-icon feature-icon--privacy">🔒</div>
-                    <h3>Cihaz İçi Analiz & Gizlilik</h3>
-                    <p>Tüm gelişmiş postür hesaplamaları ve postür analizleri tamamen cihazınızda gerçekleşir.
-                        Fotoğraflarınız ve verileriniz asla buluta gönderilmez.</p>
-                    <span class="feature-tag tag--offline">Offline-First</span>
+                    <h3>Tam Gizlilik ve Uzman Bağlantısı</h3>
+                    <p>Tüm analizleriniz sadece telefonunuzda kalır. Ayrıca fizyoterapistinizin size özel hazırladığı egzersiz programını, QR kod okutarak kolayca uygulamaya aktarabilirsiniz.</p>
                 </div>
             </div>
         </div>
@@ -1482,29 +1489,26 @@
                 <div class="step fade-in">
                     <span class="step-emoji">📸</span>
                     <div class="step-number">1</div>
-                    <h3>Dijital Muayene</h3>
-                    <p>Kameranızla duruş fotoğrafı çekin. AI otomatik olarak 33 eklem noktasını algılar ve 22 farklı
-                        bozukluğu analiz eder.</p>
+                    <h3>Dijital Postür Analizi</h3>
+                    <p>Kameranızla duruş fotoğrafı çekin. Uygulama otomatik olarak eklem noktalarını algılar ve postürünüzü analiz eder.</p>
                 </div>
                 <div class="step fade-in">
-                    <span class="step-emoji">💊</span>
+                    <span class="step-emoji">📍</span>
                     <div class="step-number">2</div>
-                    <h3>Akıllı Reçete</h3>
-                    <p>Tanı sonucunuza, ağrı beyanınıza ve şiddet seviyesine göre kişiselleştirilmiş egzersiz planı
-                        otomatik oluşturulur.</p>
+                    <h3>Ağrı Haritası</h3>
+                    <p>Vücudunuzdaki ağrı noktalarını ve şiddetini belirtin. Analizinizle birleşerek size en uygun plan oluşturulsun.</p>
                 </div>
                 <div class="step fade-in">
                     <span class="step-emoji">💪</span>
                     <div class="step-number">3</div>
-                    <h3>Günlük Tedavi</h3>
-                    <p>3D animasyonlu ve sesli koçlukla egzersizlerinizi yapın. 3 günlük cadence döngüsüyle alışkanlık
-                        oluşturun.</p>
+                    <h3>Günlük Egzersiz Rutini</h3>
+                    <p>3D animasyonlu koçlukla egzersizlerinizi yapın. 3 günlük döngülerle sıkılmadan alışkanlık kazanın.</p>
                 </div>
                 <div class="step fade-in">
                     <span class="step-emoji">📊</span>
                     <div class="step-number">4</div>
-                    <h3>Kontrol & Kanıt</h3>
-                    <p>Yeniden analiz yapın. Skorunuzdaki değişimi görün. İyileşmenizi sosyal medyada paylaşın.</p>
+                    <h3>Gelişim Kanıtı</h3>
+                    <p>Döngü sonunda yeniden analiz yapın. Skorunuzdaki değişimi görün ve gelişiminizi kanıtlayın.</p>
                 </div>
             </div>
         </div>
@@ -1516,7 +1520,7 @@
             <div class="section-label fade-in">Geliştirici</div>
             <h2 class="section-title fade-in">Hakkımızda</h2>
             <p class="section-subtitle fade-in">
-                Fizyoterapist işbirliğiyle, klinik doğruluğu hedefleyen dijital sağlık.
+                Fizyoterapist görüşleriyle şekillenen, tutarlı postür değerlendirme ve egzersiz rehberliği sunan dijital sağlık.
             </p>
 
             <div class="about-card fade-in">
@@ -1527,10 +1531,8 @@
                     <h3>FArk Studio</h3>
                     <div class="about-role">Bağımsız Geliştirici</div>
                     <p>
-                        Physio Metric, fizyoterapist işbirliğiyle geliştirilen, klinik doğruluğu hedefleyen bir dijital
-                        sağlık uygulamasıdır.
-                        Amacımız, profesyonel postür analizi ve egzersiz rehberliğini herkes için erişilebilir
-                        kılmaktır.
+                        Physio Metric, fizyoterapist görüşleriyle şekillenen, tutarlı postür değerlendirme ve egzersiz rehberliği sunan bir dijital sağlık uygulamasıdır.
+                        Amacımız, profesyonel postür analizi ve egzersiz rehberliğini herkes için erişilebilir kılmaktır.
                     </p>
                     <div class="about-links">
                         <a href="https://github.com/f-ark" target="_blank" rel="noopener">
@@ -1540,7 +1542,7 @@
                             </svg>
                             GitHub
                         </a>
-                        <a href="mailto:ferdiarici@gmail.com">
+                        <a href="mailto:ferdiarikan@gmail.com">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2">
                                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
@@ -1564,7 +1566,7 @@
                 <a href="privacy.html">Gizlilik Politikası</a>
                 <a href="terms.html">Kullanım Şartları</a>
                 <a href="developer.html">Geliştirici</a>
-                <a href="mailto:ferdiarici@gmail.com">İletişim</a>
+                <a href="mailto:ferdiarikan@gmail.com">İletişim</a>
             </div>
         </div>
     </footer>

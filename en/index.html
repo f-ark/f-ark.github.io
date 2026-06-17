@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FArk Studio — Physio Metric</title>
     <meta name="description"
-        content="Physio Metric: Your Pocket Physiotherapist. AI-supported posture analysis, physiotherapist-approved exercise prescription, and concrete proof of progress.">
+        content="Physio Metric: Your Pocket Physiotherapist. AI-supported posture analysis, personalized exercise plan, and concrete proof of progress.">
     <meta property="og:title" content="FArk Studio — Physio Metric">
     <meta property="og:description"
-        content="Measure. Correct. Prove. — AI-supported posture analysis and personalized exercise prescription.">
+        content="Measure. Correct. Prove. — AI-supported posture analysis and personalized exercise plan.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://f-ark.github.io/">
     <meta name="twitter:card" content="summary_large_image">
@@ -814,7 +814,7 @@
 
         .features-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(4, 1fr);
             gap: 20px;
         }
 
@@ -849,6 +849,10 @@
 
         .feature-card:nth-child(3)::before {
             background: linear-gradient(135deg, #818cf8, #a78bfa);
+        }
+
+        .feature-card:nth-child(4)::before {
+            background: linear-gradient(135deg, #fbbf24, #f59e0b);
         }
 
         .feature-card:hover {
@@ -1243,7 +1247,7 @@
                 </h1>
 
                 <p class="hero-subtitle">
-                    AI-supported posture analysis, physiotherapist-approved exercise prescription, and concrete proof of progress — in a single app.
+                    AI-supported posture analysis, personalized exercise plan, and concrete proof of progress — in a single app.
                 </p>
 
                 <div class="hero-cta">
@@ -1319,7 +1323,7 @@
                             <path d="M0 28 L80 20 L160 24 L240 18 L240 36 L0 36 Z"
                                 class="sparkline-area sparkarea--orange" />
                         </svg>
-                        <!-- Tanı -->
+                        <!-- Posture Result -->
                         <div class="card-diagnosis">
                             <span class="diag-severity sev--orta">MODERATE</span>
                             <span class="diag-name">Forward Head Posture</span>
@@ -1388,7 +1392,7 @@
                             <path d="M0 30 L40 26 L80 22 L120 20 L160 14 L200 10 L240 6 L240 36 L0 36 Z"
                                 class="sparkline-area sparkarea--green" />
                         </svg>
-                        <!-- Tanı -->
+                        <!-- Posture Result -->
                         <div class="card-diagnosis">
                             <span class="diag-severity sev--iyilesti">IMPROVED</span>
                             <span class="diag-name">✅ Forward Head Posture corrected</span>
@@ -1413,7 +1417,7 @@
             <div class="stats-grid">
                 <div class="stat-card">
                     <div class="stat-value">22</div>
-                    <div class="stat-label">Diagnostic Strategies</div>
+                    <div class="stat-label">Assessment strategies</div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-value">37+</div>
@@ -1437,30 +1441,32 @@
             <div class="section-label fade-in">Why Physio Metric?</div>
             <h2 class="section-title fade-in">Professional analysis,<br>in your pocket.</h2>
             <p class="section-subtitle fade-in">
-                Clinical accuracy with a deterministic diagnostic engine, approved by physiotherapists, without AI hallucinations.
+                Consistent measurement and reliable results with physiotherapist-supported AI.
             </p>
 
             <div class="features-grid">
                 <div class="feature-card fade-in">
                     <div class="feature-icon feature-icon--clinical">🔬</div>
-                    <h3>Deterministic Diagnostic Engine</h3>
-                    <p>22 different diagnostic strategies approved by physiotherapists, without AI hallucinations. Progressive exercise assignment based on severity and combo diagnoses (Knock Knees + Out-toeing = Flat Foot Risk).</p>
-                    <span class="feature-tag tag--deterministic">100% Deterministic</span>
+                    <h3>Consistent Posture Assessment</h3>
+                    <p>By analyzing 33 different points on your body through your camera, it evaluates 22 different posture habits. It combines different findings to provide comprehensive and reliable results.</p>
                 </div>
 
                 <div class="feature-card fade-in">
-                    <div class="feature-icon feature-icon--qr">📲</div>
-                    <h3>QR Digital Prescription Bridge</h3>
-                    <p>Your physiotherapist sends your custom exercise plan via QR code. Access your personalized plan with a single scan. Frictionless, secure patient-expert connection.</p>
-                    <span class="feature-tag tag--b2b2c">B2B2C Model</span>
+                    <div class="feature-icon feature-icon--qr" style="background: rgba(255, 109, 0, 0.1); color: #FF6D00;">📍</div>
+                    <h3>Interactive Pain Map</h3>
+                    <p>You can mark the pain you feel and its severity on a visual map. The app combines your posture analysis with your pain status to select the most suitable exercises for you.</p>
+                </div>
+
+                <div class="feature-card fade-in">
+                    <div class="feature-icon feature-icon--qr" style="background: rgba(0, 230, 118, 0.1); color: #00E676;">⏳</div>
+                    <h3>3-Day Exercise Cycle</h3>
+                    <p>To help you build a habit, your program is presented in 3-day cycles. Exercises you miss carry over. At the end of the cycle, a new assessment shows your progress.</p>
                 </div>
 
                 <div class="feature-card fade-in">
                     <div class="feature-icon feature-icon--privacy">🔒</div>
-                    <h3>On-Device Analysis & Privacy</h3>
-                    <p>All advanced posture calculations and analyses occur entirely on your device.
-                        Your photos and data are never sent to the cloud.</p>
-                    <span class="feature-tag tag--offline">Offline-First</span>
+                    <h3>Total Privacy & Expert Connection</h3>
+                    <p>All your analyses stay securely on your phone. You can also easily import a custom exercise program prepared by your physiotherapist by simply scanning a QR code.</p>
                 </div>
             </div>
         </div>
@@ -1479,27 +1485,26 @@
                 <div class="step fade-in">
                     <span class="step-emoji">📸</span>
                     <div class="step-number">1</div>
-                    <h3>Digital Examination</h3>
-                    <p>Take a posture photo with your camera. AI automatically detects 33 joint points and analyzes 22 different
-                        disorders.</p>
+                    <h3>Posture Check</h3>
+                    <p>Take a posture photo with your camera. The app automatically detects joint points and analyzes your posture.</p>
                 </div>
                 <div class="step fade-in">
-                    <span class="step-emoji">💊</span>
+                    <span class="step-emoji">📍</span>
                     <div class="step-number">2</div>
-                    <h3>Smart Prescription</h3>
-                    <p>A personalized exercise plan is automatically generated based on your diagnosis, pain statement, and severity level.</p>
+                    <h3>Pain Map</h3>
+                    <p>Indicate the pain points on your body and their severity. Combined with your analysis, the most suitable plan is created.</p>
                 </div>
                 <div class="step fade-in">
                     <span class="step-emoji">💪</span>
                     <div class="step-number">3</div>
-                    <h3>Daily Treatment</h3>
-                    <p>Do your exercises with 3D animated and voice coaching. Build a habit with a 3-day cadence cycle.</p>
+                    <h3>Daily Exercise Routine</h3>
+                    <p>Do your exercises with 3D animated coaching. Build a habit without getting bored through 3-day cycles.</p>
                 </div>
                 <div class="step fade-in">
                     <span class="step-emoji">📊</span>
                     <div class="step-number">4</div>
-                    <h3>Control & Proof</h3>
-                    <p>Perform a re-analysis. See the change in your score. Share your improvement on social media.</p>
+                    <h3>Proof of Progress</h3>
+                    <p>Perform a re-analysis at the end of the cycle. See the change in your score and prove your improvement.</p>
                 </div>
             </div>
         </div>
@@ -1511,7 +1516,7 @@
             <div class="section-label fade-in">Developer</div>
             <h2 class="section-title fade-in">About Us</h2>
             <p class="section-subtitle fade-in">
-                Digital health aiming for clinical accuracy in collaboration with physiotherapists.
+                Digital health focused on consistent posture assessment and exercise guidance, shaped by physiotherapist input.
             </p>
 
             <div class="about-card fade-in">
@@ -1522,7 +1527,7 @@
                     <h3>FArk Studio</h3>
                     <div class="about-role">Independent Developer</div>
                     <p>
-                        Physio Metric is a digital health app developed in collaboration with physiotherapists, aiming for clinical accuracy. Our goal is to make professional posture analysis and exercise guidance accessible to everyone.
+                        Physio Metric is a digital health app shaped by physiotherapist input, focused on consistent posture assessment and exercise guidance. Our goal is to make professional posture analysis and exercise guidance accessible to everyone.
                     </p>
                     <div class="about-links">
                         <a href="https://github.com/f-ark" target="_blank" rel="noopener">
