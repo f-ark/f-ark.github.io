@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hesap Silme — Physio Metric</title>
-    <meta name="description" content="Physio Metric uygulaması hesap ve veri silme işlemleri.">
-    <link rel="icon" type="image/png" href="assets/fark_logo.png">
+    <title>Delete Account — Physio Metric</title>
+    <meta name="description" content="Account and data deletion for Physio Metric app.">
+    <link rel="icon" type="image/png" href="../assets/fark_logo.png">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -79,13 +79,13 @@
 <body>
     <nav class="navbar">
         <div class="container">
-            <a href="index.html" class="nav-brand"><img src="assets/fark_logo.png" alt="FArk" style="height:26px;width:auto;border-radius:4px;"> FArk Studio</a>
+            <a href="index.html" class="nav-brand"><img src="../assets/fark_logo.png" alt="FArk" style="height:26px;width:auto;border-radius:4px;"> FArk Studio</a>
             <div style="display:flex; align-items:center; gap:20px;">
-                <a href="index.html" class="nav-back">← Ana Sayfa</a>
+                <a href="index.html" class="nav-back">← Home</a>
                 <div style="display:flex; gap:8px; font-size:13px; font-weight:600;">
-                    <a href="#" style="color:var(--text); text-decoration:none;">TR</a>
+                    <a href="../delete-account.html" style="color:var(--text-muted); text-decoration:none; transition:color 0.3s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text-muted)'">TR</a>
                     <span style="color:var(--text-muted)">|</span>
-                    <a href="en/delete-account.html" style="color:var(--text-muted); text-decoration:none; transition:color 0.3s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text-muted)'">EN</a>
+                    <a href="#" style="color:var(--text); text-decoration:none;">EN</a>
                 </div>
             </div>
         </div>
@@ -93,62 +93,62 @@
 
     <div class="container">
         <div class="page-header">
-            <h1>Hesap Silme Talebi</h1>
-            <p>Son güncelleme: 17 Haziran 2026</p>
+            <h1>Account Deletion Request</h1>
+            <p>Last updated: June 17, 2026</p>
         </div>
 
         <div class="content">
             <div class="warning-box">
-                <strong>⚠️ Önemli:</strong> Hesap silme işlemi <strong>geri alınamaz</strong>. Hesabınızı sildiğinizde, ilerlemeleriniz, egzersiz geçmişiniz ve uygulamaya dair tüm verileriniz kalıcı olarak kaldırılır.
+                <strong>⚠️ Important:</strong> The account deletion process is <strong>irreversible</strong>. When you delete your account, your progress, exercise history, and all data related to the app will be permanently removed.
             </div>
 
-            <h2>Yöntem 1: Uygulama İçinden Hızlı Silme (Önerilen)</h2>
-            <p>Uygulamaya erişiminiz varsa, hesabınızı en hızlı şekilde doğrudan cihazınızdan silebilirsiniz:</p>
+            <h2>Method 1: Quick Deletion In-App (Recommended)</h2>
+            <p>If you have access to the app, you can delete your account directly from your device most quickly:</p>
             <ul>
-                <li>Physio Metric uygulamasını açın.</li>
-                <li>Profil sekmesine gidin.</li>
-                <li><strong>"Hesabı Sil"</strong> butonuna dokunun ve onaylayın.</li>
+                <li>Open the Physio Metric app.</li>
+                <li>Go to the Profile tab.</li>
+                <li>Tap the <strong>"Delete Account"</strong> button and confirm.</li>
             </ul>
 
-            <h2>Yöntem 2: E-posta ile Hesap Silme Talebi</h2>
-            <p>Uygulamayı sildiyseniz veya erişiminiz yoksa, hesabınızın silinmesini e-posta yoluyla talep edebilirsiniz:</p>
+            <h2>Method 2: Account Deletion Request via Email</h2>
+            <p>If you have uninstalled the app or don't have access, you can request account deletion via email:</p>
             <ul>
-                <li>Kayıt olduğunuz veya giriş yaptığınız e-posta adresinizden bize ulaşın.</li>
-                <li>E-postayı <strong><a href="mailto:ferdiarikan@gmail.com" style="color:var(--accent);">ferdiarikan@gmail.com</a></strong> adresine gönderin.</li>
-                <li>Konu başlığına "Hesap Silme Talebi - Physio Metric" yazın.</li>
-                <li>Talebiniz doğrulandıktan sonra verileriniz 48 saat içinde kalıcı olarak silinecektir.</li>
+                <li>Contact us from the email address you registered or logged in with.</li>
+                <li>Send the email to <strong><a href="mailto:ferdiarikan@gmail.com" style="color:var(--accent);">ferdiarikan@gmail.com</a></strong>.</li>
+                <li>Write "Account Deletion Request - Physio Metric" in the subject line.</li>
+                <li>Once your request is verified, your data will be permanently deleted within 48 hours.</li>
             </ul>
 
-            <h2>Hesap Silindiğinde Ne Olur?</h2>
+            <h2>What Happens When Your Account is Deleted?</h2>
             <table class="data-table">
                 <thead>
                     <tr>
-                        <th>Veri Türü</th>
-                        <th>Silinme Durumu</th>
+                        <th>Data Type</th>
+                        <th>Deletion Status</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><strong>Oturum Bilgileri</strong><br>(Firebase Auth)</td>
-                        <td>Talep işleme alındığı an kalıcı olarak silinir.</td>
+                        <td><strong>Session Information</strong><br>(Firebase Auth)</td>
+                        <td>Permanently deleted as soon as the request is processed.</td>
                     </tr>
                     <tr>
-                        <td><strong>Analiz ve Sağlık Verileri</strong><br>(Postür, Egzersiz vb.)</td>
-                        <td>Sunucularımızda zaten tutulmaz. Cihazınızdaki uygulamayı kaldırdığınız an tamamen yok olur.</td>
+                        <td><strong>Analysis and Health Data</strong><br>(Posture, Exercises, etc.)</td>
+                        <td>Not stored on our servers. Completely disappears the moment you uninstall the app from your device.</td>
                     </tr>
                     <tr>
-                        <td><strong>Hata Günlükleri</strong><br>(Crashlytics)</td>
-                        <td>Anonim hata kayıtları maksimum 90 gün içinde otomatik olarak sistemden silinir.</td>
+                        <td><strong>Error Logs</strong><br>(Crashlytics)</td>
+                        <td>Anonymous error logs are automatically deleted from the system within a maximum of 90 days.</td>
                     </tr>
                 </tbody>
             </table>
             
-            <p>Gizlilik uygulamalarımız hakkında daha fazla bilgi almak için <a href="privacy.html" style="color:var(--accent);">Gizlilik Politikamızı</a> inceleyebilirsiniz.</p>
+            <p>To learn more about our privacy practices, please review our <a href="privacy.html" style="color:var(--accent);">Privacy Policy</a>.</p>
         </div>
     </div>
 
     <footer class="footer">
-        <p>© 2026 FArk Studio · <a href="index.html">Ana Sayfa</a> · <a href="privacy.html">Gizlilik Politikası</a> · <a href="terms.html">Kullanım Şartları</a></p>
+        <p>© 2026 FArk Studio · <a href="index.html">Home</a> · <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Use</a></p>
     </footer>
 </body>
 </html>

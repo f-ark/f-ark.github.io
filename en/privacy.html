@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gizlilik Politikası — Physio Metric</title>
+    <title>Privacy Policy — Physio Metric</title>
     <meta name="description" content="Physio Metric uygulamasının gizlilik politikası.">
-    <link rel="icon" type="image/png" href="assets/fark_logo.png">
+    <link rel="icon" type="image/png" href="../assets/fark_logo.png">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -58,13 +58,13 @@
 <body>
     <nav class="navbar">
         <div class="container">
-            <a href="index.html" class="nav-brand"><img src="assets/fark_logo.png" alt="FArk" style="height:26px;width:auto;border-radius:4px;"> FArk Studio</a>
+            <a href="index.html" class="nav-brand"><img src="../assets/fark_logo.png" alt="FArk" style="height:26px;width:auto;border-radius:4px;"> FArk Studio</a>
             <div style="display:flex; align-items:center; gap:20px;">
-                <a href="index.html" class="nav-back">← Ana Sayfa</a>
+                <a href="index.html" class="nav-back">← Home</a>
                 <div style="display:flex; gap:8px; font-size:13px; font-weight:600;">
-                    <a href="#" style="color:var(--text); text-decoration:none;">TR</a>
+                    <a href="../privacy.html" style="color:var(--text-muted); text-decoration:none; transition:color 0.3s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text-muted)'">TR</a>
                     <span style="color:var(--text-muted)">|</span>
-                    <a href="en/privacy.html" style="color:var(--text-muted); text-decoration:none; transition:color 0.3s;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text-muted)'">EN</a>
+                    <a href="#" style="color:var(--text); text-decoration:none;">EN</a>
                 </div>
             </div>
         </div>
@@ -72,29 +72,29 @@
 
     <div class="container">
         <div class="page-header">
-            <h1>Gizlilik Politikası</h1>
-            <p>Son güncelleme: 17 Haziran 2026</p>
+            <h1>Privacy Policy</h1>
+            <p>Last updated: June 17, 2026</p>
         </div>
 
         <div class="content">
             <div class="highlight-box">
                 <strong>🔒 Temel İlke:</strong> Physio Metric, gizlilik öncelikli (privacy-first) bir uygulamadır. 
                 Postür analizi tamamen cihazınızda gerçekleştirilir. Fotoğraflarınız, analiz sonuçlarınız ve kişisel 
-                sağlık verileriniz hiçbir zaman sunucularımıza gönderilmez.
+                your health data is never sent to our servers.
             </div>
 
             <div class="highlight-box" style="background:rgba(251,191,36,0.06); border-color:rgba(251,191,36,0.15);">
-                <strong>⚕️ Tıbbi Feragat Beyanı:</strong> Physio Metric tıbbi cihaz değildir. Uygulama herhangi bir hastalığı veya tıbbi durumu teşhis, tedavi, iyileştirme ya da önleme amacı taşımaz. Sunulan bilgiler yalnızca bilgilendirme ve egzersiz takibi amaçlıdır. Tıbbi kararlar için hekime veya fizyoterapiste danışılmalıdır.
+                <strong>⚕️ Medical Disclaimer:</strong> Physio Metric is not a medical device. The app is not intended to diagnose, treat, cure, or prevent any disease or medical condition. The information provided is for informational and exercise tracking purposes only. Please consult a physician or physiotherapist for medical decisions.
             </div>
 
-            <h2>1. Toplanan Veriler</h2>
+            <h2>1. Collected Data</h2>
             
-            <h3>1.1. Cihazda Kalan Veriler (Sunucuya Gönderilmez)</h3>
+            <h3>1.1. On-Device Data (Not Sent to Servers)</h3>
             <ul>
-                <li><strong>Postür Analiz Verileri:</strong> ML Kit ile yapılan iskelet noktası tespiti, açı hesaplamaları ve postür değerlendirme sonuçları tamamen cihazınızda işlenir ve saklanır. Bu sonuçlar tıbbi tanı niteliği taşımaz.</li>
-                <li><strong>Fotoğraflar:</strong> Analiz için çekilen fotoğraflar cihazınızdan çıkmaz. Sunucuya veya bulut servisine aktarılmaz.</li>
-                <li><strong>Egzersiz Verileri:</strong> Egzersiz geçmişi, streak bilgisi ve ilerleme verileri yerel veritabanında (Drift) saklanır.</li>
-                <li><strong>Ağrı Haritası:</strong> İşaretlediğiniz ağrı noktaları ve şiddet bilgileri yalnızca cihazınızda tutulur.</li>
+                <li><strong>Posture Analysis Data:</strong> Skeletal point detection, angle calculations, and posture evaluation results made with ML Kit are processed and stored entirely on your device. These results do not constitute a medical diagnosis.</li>
+                <li><strong>Photos:</strong> Photos taken for analysis do not leave your device. They are not transferred to servers or cloud services.</li>
+                <li><strong>Exercise Data:</strong> Exercise history, streak information, and progress data are stored in a local database (Drift).</li>
+                <li><strong>Pain Map:</strong> Pain points and severity information you mark are kept solely on your device.</li>
             </ul>
 
             <h3>1.2. Hesap Bilgileri (Firebase Authentication)</h3>
@@ -104,10 +104,10 @@
             </ul>
             <p>Bu bilgiler yalnızca oturum yönetimi için kullanılır ve üçüncü taraflarla paylaşılmaz.</p>
 
-            <h3>1.3. Anonim Kullanım Verileri</h3>
+            <h3>1.3. Anonymous Usage Data</h3>
             <ul>
-                <li><strong>Firebase Crashlytics:</strong> Uygulama çökmesi durumunda hata ayıklama amacıyla çökme raporları, cihaz modeli, işletim sistemi sürümü, uygulama sürümü, hata günlükleri ve uygulama kurulumuna bağlı teknik tanımlayıcılar (Crashlytics Installation UUID) işlenebilir. Bu veriler uygulama hatalarını tespit etmek ve gidermek amacıyla kullanılır; doğrudan sağlık verisi veya fotoğraf içermez.</li>
-                <li><strong>Firebase App Check:</strong> Uygulamanın gerçek bir cihazda çalıştığını doğrulamak için cihaz bütünlüğü kontrolü yapılır.</li>
+                <li><strong>Firebase Crashlytics:</strong> In the event of an app crash, crash reports, device model, OS version, app version, error logs, and technical identifiers linked to the app installation (Crashlytics Installation UUID) may be processed for debugging purposes. This data is used to identify and fix app errors; it does not contain direct health data or photos.</li>
+                <li><strong>Firebase App Check:</strong> Device integrity checks are performed to verify that the app is running on a genuine device.</li>
             </ul>
 
             <h2>2. Veri Kullanım Amaçları</h2>
@@ -133,31 +133,31 @@
                 <li>Minimum veri toplama prensibi uygulanır</li>
             </ul>
 
-            <h2>5. Kullanıcı Hakları</h2>
-            <p>Aşağıdaki haklara sahipsiniz:</p>
+            <h2>5. User Rights</h2>
+            <p>You have the following rights:</p>
             <ul>
-                <li><strong>Veri silme:</strong> Uygulama içinden "Profil > Hesabı Sil" seçeneği ile tüm verilerinizi kalıcı olarak silebilirsiniz. Uygulamaya erişemiyorsanız <a href="delete-account.html" style="color:var(--accent);">hesap silme sayfamızdan</a> talimatları takip edebilirsiniz.</li>
-                <li><strong>Veri erişimi:</strong> Cihazınızda saklanan tüm verilerinize uygulama üzerinden erişebilirsiniz.</li>
-                <li><strong>Hesap kapatma:</strong> İstediğiniz zaman hesabınızı kapatabilir ve tüm ilişkili verileri silebilirsiniz.</li>
+                <li><strong>Data deletion:</strong> You can permanently delete all your data using the "Profile > Delete Account" option within the app. If you cannot access the app, you can follow instructions on our <a href="delete-account.html" style="color:var(--accent);">account deletion page</a>.</li>
+                <li><strong>Data access:</strong> You can access all your data stored on your device through the app.</li>
+                <li><strong>Account closure:</strong> You can close your account and delete all associated data at any time.</li>
             </ul>
 
-            <h2>6. Çocukların Gizliliği</h2>
+            <h2>6. Children's Privacy</h2>
             <p>Physio Metric, 13 yaşın altındaki çocuklara yönelik değildir. Bilerek 13 yaşın altındaki kişilerden kişisel bilgi toplamayız.</p>
 
-            <h2>7. Değişiklikler</h2>
+            <h2>7. Changes</h2>
             <p>Bu gizlilik politikası zaman zaman güncellenebilir. Önemli değişiklikler uygulama içinden bildirilecektir.</p>
 
-            <h2>8. İletişim</h2>
-            <p>Gizlilik ile ilgili sorularınız için:</p>
+            <h2>8. Contact</h2>
+            <p>For questions regarding privacy:</p>
             <ul>
-                <li><strong>E-posta:</strong> <a href="mailto:ferdiarikan@gmail.com" style="color:var(--accent);">ferdiarikan@gmail.com</a></li>
-                <li><strong>Geliştirici:</strong> FArk Studio</li>
+                <li><strong>Email:</strong> <a href="mailto:ferdiarikan@gmail.com" style="color:var(--accent);">ferdiarikan@gmail.com</a></li>
+                <li><strong>Developer:</strong> FArk Studio</li>
             </ul>
         </div>
     </div>
 
     <footer class="footer">
-        <p>© 2026 FArk Studio · <a href="index.html">Ana Sayfa</a> · <a href="terms.html">Kullanım Şartları</a> · <a href="delete-account.html">Hesap Silme</a></p>
+        <p>© 2026 FArk Studio · <a href="index.html">Home</a> · <a href="terms.html">Terms of Use</a> · <a href="delete-account.html">Delete Account</a></p>
     </footer>
 </body>
 </html>
